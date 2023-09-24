@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,200;1,700&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>C Agribisnis</title>
+  </head>
+  <body>
+    <header class="navbar-container">
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">C <span>Agribisnis</span>.</a>
+        <div class="navbar-nav">
+          <a href="#home">Home</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#schedule">Jadwal Kuliah</a>
+          <a href="#gallery">Galeri</a>
+        </div>
+        <div class="navbar-extra">
+          <a href="#" id="search-button"><i data-feather="search"></i></a>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+        <!-- Search From Start -->
+        <div class="search-form">
+          <input type="search" id="search-box" placeholder="Cari disini..." />
+          <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- Search Form End -->
+      </nav>
+      <!-- Navbar End -->
+    </header>
+
+    <main class="main-container">
+      <!-- Hero Section Start -->
+      <section class="hero" id="home">
+        <div class="mask-container">
+          <div class="content">
+            <h1>Welcome</h1>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- About Section Start-->
+      <section id="about" class="about">
+        <h2><span>Tentang</span> Kami</h2>
+        <div class="row">
+          <div class="about-img" data-aos="fade-right" data-aos-duration="800">
+            <img src="img/kelas-about.jpg" alt="Tentang Kami" data-aos-duration="800" />
+          </div>
+          <div class="content" data-aos="fade-left">
+            <h3>Ada apa sih di kelas C ini?</h3>
+            <p>
+              Kelas yang bener-bener asik! Kelas ini terdiri dari 26 mahasiswa, dengan 5 cowok yang ciamik dan 21 cewek yang seru abis. Mereka berasal dari berbagai daerah, dengan sebagian besar berasal dari Bekasi. Gabungan budaya dan
+              ide-ide keren dari semua orang ini bener-bener bikin kelasnya jadi seru banget. Di kelas ini, kita bisa belajar agribisnis dengan semangat penuh dan berkolaborasi, pastinya siap jadi pemimpin di bidang ini. Jadi, kelas C
+              Agribisnis ini tuh tempat keren buat belajar bareng teman-teman dari berbagai latar belakang, dan kita bisa jadi bintang masa depan di dunia agribisnis!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
+
+      <!-- Input Section Start -->
+      <section class="schedule" id="schedule">
+        <h2><span>Jadwal</span> Kuliah</h2>
+        <div class="row">
+          <div class="schedule_input" data-aos="fade-down" data-aos-duration="800">
+            <h3>Tambah Jadwal</h3>
+            <form id="inputSchedule">
+              <div class="input">
+                <label for="inputScheduleDate">Tanggal:</label>
+                <input id="inputScheduleDate" type="date" required />
+              </div>
+              <div class="input">
+                <label for="inputScheduleDay">Hari:</label>
+                <input id="inputScheduleDay" type="text" required readonly />
+              </div>
+              <div class="input">
+                <label for="inputScheduleTimeStart">Waktu:</label>
+                <input id="inputScheduleTimeStart" type="time" required />
+                <label for="inputScheduleTimeEnd"> - </label>
+                <input id="inputScheduleTimeEnd" type="time" required />
+              </div>
+              <div class="input">
+                <label for="inputScheduleTitle">Mata Kuliah:</label>
+                <input id="inputScheduleTitle" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputScheduleLecture">Dosen Pengampu:</label>
+                <input id="inputScheduleLecture" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputScheduleMethod">Metode:</label>
+                <select name="" id="inputScheduleMethod">
+                  <option value="online">Online</option>
+                  <option value="offline">Offline</option>
+                </select>
+              </div>
+              <button id="scheduleSubmit" type="submit">Tambah Jadwal</button>
+            </form>
+          </div>
+          <div class="schedule_view" id="scheduleView" data-aos="fade-up" data-aos-duration="800">
+            <h3>Jadwal</h3>
+          </div>
+        </div>
+
+        <!-- Modal Pop Up -->
+        <div class="pop-up" id="popup"></div>
+        <!-- Modal Pop Up -->
+      </section>
+      <!-- Input Section End -->
+
+      <section class="gallery" id="gallery">
+        <h2>Galeri (Cooming Soon)</h2>
+      </section>
+    </main>
+
+    <!-- Footer Start-->
+    <footer>
+      <div class="socmed">
+        <a href="https://www.instagram.com/cforchuaks/"><i data-feather="instagram"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Jadwal Kuliah</a>
+        <a href="#contact">Galeri</a>
+      </div>
+      <div class="credit">
+        <p>Craeted by <a href="https://www.instagram.com/a_reg69/">Regi Juliansyah</a>. | &copy 2023</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      feather.replace();
+    </script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <section class="schedule" id="schedule">
+      <h2><span>Jadwal</span> Kuliah</h2>
+      <div class="row">
+        <div class="schedule_input">
+          <h3>Tambah Jadwal</h3>
+          <form id="inputSchedule">
+            <div class="input">
+              <label for="inputScheduleDate">Tanggal:</label>
+              <input id="inputScheduleDate" type="date" required />
+            </div>
+            <div class="input">
+              <label for="inputScheduleDay">Hari:</label>
+              <input id="inputScheduleDay" type="text" required readonly />
+            </div>
+            <div class="input">
+              <label for="inputScheduleTimeStart">Waktu:</label>
+              <input id="inputScheduleTimeStart" type="time" required />
+              <label for="inputScheduleTimeEnd"> - </label>
+              <input id="inputScheduleTimeEnd" type="time" required />
+            </div>
+            <div class="input">
+              <label for="inputScheduleTitle">Mata Kuliah:</label>
+              <input id="inputScheduleTitle" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputScheduleLecture">Dosen Pengampu:</label>
+              <input id="inputScheduleLecture" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputScheduleMethod">Metode:</label>
+              <select name="" id="inputScheduleMethod">
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+              </select>
+            </div>
+            <button id="scheduleSubmit" type="submit">Tambah Jadwal</button>
+          </form>
+        </div>
+        <div class="schedule_view" id="scheduleView">
+          <!-- <article class="schedule_item">
+            <div class="schedule_detail">
+              <h4>Senin</h4>
+              <p>23-09-2023</p>
+              <p>09.00 -10.00</p>
+              <p>Online</p>
+            </div>
+            <div class="schedule_name">
+              <h4>Ekonomi Makro</h4>
+              <p>Regi Juliansyah</p>
+            </div>
+            <div class="action">
+              <button class="red">Hapus buku</button>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+    <script src="try.js"></script>
+  </body>
+</html>
